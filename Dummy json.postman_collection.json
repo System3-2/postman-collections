@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "a1130078-b211-4acd-843e-3118a85ce362",
+		"name": "Dummy json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23856552"
+	},
+	"item": [
+		{
+			"name": "https://api.dictionaryapi.dev/api/v2/entries/en/word",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.dictionaryapi.dev/api/v2/entries/en/word",
+					"protocol": "https",
+					"host": [
+						"api",
+						"dictionaryapi",
+						"dev"
+					],
+					"path": [
+						"api",
+						"v2",
+						"entries",
+						"en",
+						"word"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Dummy json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dummy-api-e7yq.onrender.com/api/v1/app",
+					"protocol": "https",
+					"host": [
+						"dummy-api-e7yq",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"app"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
