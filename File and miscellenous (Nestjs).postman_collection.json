@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "7e5e7457-15fa-4cfc-aec1-27112e8438d8",
+		"name": "File and miscellenous (Nestjs)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23856552"
+	},
+	"item": [
+		{
+			"name": "Upload multiple files",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/home/oloja/Pictures/neovim.png"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/home/oloja/Pictures/kitty.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.49.1/auth/uploads",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"49",
+						"1"
+					],
+					"path": [
+						"auth",
+						"uploads"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload single files",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/oloja/Pictures/nest.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.49.1/auth/upload",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"49",
+						"1"
+					],
+					"path": [
+						"auth",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Event emitting",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEzLCJkYXRhIjp7Im5hbWUiOiJvlsIjoidGVzdEBlbWFpbC5jb20ifSwiaWF0IjoxNjg1NDg4OTQxLCJleHAiOjE2ODU0OTI1NDF9.416uInMPs9EsLzFqWKXqJp1wds0_TgxWvPaestmscLU",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@email.com\",\n    \"password\": \"Wardprowse26\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.49.1/auth/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"49",
+						"1"
+					],
+					"path": [
+						"auth",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"test@email.com\",\n    \"password\": \"Wardprowse23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.49.1/auth/login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"49",
+						"1"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"oloja\",\n    \"email\": \"john@email.com\",\n    \"password\": \"Wardprowse23\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.49.1/auth/signup",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"49",
+						"1"
+					],
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
