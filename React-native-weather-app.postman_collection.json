@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "9a874c83-ec27-48e2-9c84-dbe865c360ac",
+		"name": "React-native-weather-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23856552"
+	},
+	"item": [
+		{
+			"name": "https://api.openweathermap.org/data/2.5/forecast%3Flat=6.7563349&3.4238099=3.4238099&appid=1d5fd423190cbf62d291aeea4f200568",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast%3Flat=6.7563349&3.4238099=3.4238099&appid=1d5fd423190cbf62d291aeea4f200568",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast%3Flat=6.7563349&3.4238099=3.4238099&appid=1d5fd423190cbf62d291aeea4f200568"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://www.weatherapi.com/docs//current.json",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.weatherapi.com/docs//current.json",
+					"protocol": "https",
+					"host": [
+						"www",
+						"weatherapi",
+						"com"
+					],
+					"path": [
+						"docs",
+						"",
+						"current.json"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.openweathermap.org/data/2.5/forecast?iat=6.7563349&lon=3.4238099&APPID=28ebd98f8ff515adf0e6e65517ef66cc\n",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/forecast?iat=6.7563349&lon=3.4238099&APPID=28ebd98f8ff515adf0e6e65517ef66cc\n",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "iat",
+							"value": "6.7563349"
+						},
+						{
+							"key": "lon",
+							"value": "3.4238099"
+						},
+						{
+							"key": "APPID",
+							"value": "28ebd98f8ff515adf0e6e65517ef66cc\n"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
