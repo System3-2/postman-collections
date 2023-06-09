@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "d31f6216-b2e5-4d9c-90c3-9e614ad3087e",
+		"name": "Task manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23856552"
+	},
+	"item": [
+		{
+			"name": "Get [get all tasks]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}",
+					"host": [
+						"{{URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post [create task]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"delete task accomplished\"\n    \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}",
+					"host": [
+						"{{URL}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get [single tasks]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/63dbd141be5cf10bc9e9c634",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"63dbd141be5cf10bc9e9c634"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update task [ update]",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"shake and bake\",\n    \"completed\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/63dbd19cbe5cf10bc9e9c636",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"63dbd19cbe5cf10bc9e9c636"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete tasks [delete]",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/63dbd0e6faa87f0b4ecc6b25",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"63dbd0e6faa87f0b4ecc6b25"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
